@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catálogo | Dream</title>
+    <link rel="icon" href="logo.png" type="image/x-icon"> 
+
+    <style>
+         body {
+            background-color: #220000;
+            color: #f0f0f0; /* Cor do texto */
+            margin: 0; /* Remover margens padrão */
+            font-family: Arial, sans-serif; /* Definir uma fonte padrão */
+        }
+
+        .header {
+            background-color: #220000;
+            padding: 20px 0; /* Adicionar espaço interno no cabeçalho */
+            text-align: center; /* Alinhar conteúdo no centro */
+        }
+
+        .header img {
+            align-items: left;
+            max-width: 100px; /* Ajustar o tamanho do logo conforme necessário */
+            display: block; /* Remover espaço extra abaixo da imagem */
+            margin-right: 10px;         }
+
+        .h1 {
+            color: #f0f0f0;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            margin: 0; /* Remover margem padrão
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Centralizar os cartões */
+            flex-wrap: wrap; /* Permitir que os cartões quebrem para a próxima linha */
+            padding: 20px; /* Adicionar espaço interno nos cartões */
+        }
+
+        .card {
+            flex: 0 0 calc(25% - 20px); /* Definir a largura dos cartões */
+            width: 150px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #220000;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+        }
+
+        .card:hover ~ .card {
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+        <h1 class="h1">Catálogo:</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="amelie.png" alt="Avatar">
+            Ficção Científica
+        </div>
+        <div class="card">
+            <img src="PulpFiction.png" alt="Pulp Fiction">
+            Card 2
+        </div>
+        <div class="card">
+            <img src="sunri.png" alt="Sunrise">
+            Card 3
+        </div>
+        <div class="card">
+            <img src="fale.png" alt="Fale">
+            Card 4
+        </div>
+    </div>
+
+</body>
+</html>
