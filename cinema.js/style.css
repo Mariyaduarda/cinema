@@ -1,24 +1,63 @@
+.body {
+    background-color: #220000;
+    color: #f0f0f0; /* Cor do texto */
+    margin: 0; /* Remover margens padrão */
+    font-family: Arial, sans-serif; /* Definir uma fonte padrão */
+}
+
+.header {
+    background-color: #220000;
+    padding: 20px 0; /* Adicionar espaço interno no cabeçalho */
+    text-align: center; /* Alinhar conteúdo no centro */
+}
+
+.header img {
+    align-items: left;
+    max-width: 150px; /* Ajustar o tamanho do logo conforme necessário */
+    display: block; /* Remover espaço extra abaixo da imagem */
+    margin-right: 10px;         }
 
 .h1 {
-    dispaly:flex;
+    color: #f0f0f0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0; 
 }
+
 .container {
     display: flex;
+    justify-content: center; /* Centralizar os cartões */
+    flex-wrap: wrap; /* Permitir que os cartões quebrem para a próxima linha */
+    padding: 20px; /* Adicionar espaço interno nos cartões */
 }
 
 .card {
+    flex: 0 0 calc(25% - 20px); /* Definir a largura dos cartões */
+    width: 150px;
+    height: 200px;
+    background-color: #220000;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
     position: relative;
-    left: 0px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    overflow: hidden;
 }
 
-.card:not(:first-child) {
-    margin-left: -50px;
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .card:hover {
     transform: translateY(-20px);
 }
 
-.card:hover ~ .card{
+.card:hover ~ .card {
     left: 50px;
 }
